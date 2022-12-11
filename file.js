@@ -23,6 +23,6 @@ function skin() {
     pseudo = document.getElementById("inputSkin").value;
     inHtml = document.getElementById("skin");
     console.log(pseudo, inHtml)
-    getSkin = "https://skins.nationsglory.fr/" + pseudo;
+    getSkin = "https://city-craft.fr/api/skin-api/skins/" + pseudo;
     inHtml.innerHTML = '<center><img src="' + getSkin + '" alt="' + pseudo + '"></center>';
 }
