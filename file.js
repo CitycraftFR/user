@@ -2,8 +2,8 @@ function headSkin() {
     pseudo = document.getElementById("inputSkin").value;
     inHtml = document.getElementById("skin");
     console.log(pseudo, inHtml)
-    getSkin1 = "https://skins.nationsglory.fr/face/" + pseudo + "/3d/15";
-    getSkin2 = "https://skins.nationsglory.fr/face/" + pseudo;
+    getSkin1 = "https://city-craft.fr/api/skin-api/avatars/face/" + pseudo + "/3d/15";
+    getSkin2 = "https://city-craft.fr/api/skin-api/avatars/" + pseudo;
 
 
     img1 = '<center><img src="' + getSkin1 + '" alt="' + pseudo + '">';
@@ -15,7 +15,7 @@ function bodySkin() {
     pseudo = document.getElementById("inputSkin").value;
     inHtml = document.getElementById("skin");
     console.log(pseudo, inHtml)
-    getSkin = "https://skins.nationsglory.fr/body/" + pseudo;
+    getSkin = "https://city-craft.fr/api/skin-api/skins/" + pseudo;
     inHtml.innerHTML = '<center><img src="' + getSkin + '" alt="' + pseudo + '"></center>';
 }
 
